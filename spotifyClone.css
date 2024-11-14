@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    font-family: "Quicksand", sans-serif;
+    overflow:visible
+    
+}
+
+
+
+/* /////////////////////////////////////////////////////               NavBar     */
+
+.navbar {
+    background-color: #000000;
+    color: #1F1F1F;
+}
+
+.navbar-brand img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.navbar-collapse ul li a {
+    color: white;
+}
+
+.navbar-collapse i {
+    font-size: 1.7rem;
+    color: #ffffff73;
+    margin-left: 2%;
+}
+
+
+form .form-control {
+    color: rgb(186, 35, 35);
+    background-color: transparent;
+}
+
+.searchInput::placeholder{
+    color: rgba(255, 255, 255, 0.489);
+}
+
+.searchBar {
+    border: #1F1F1F;
+    font-weight: 800;
+    width: 34rem;
+    margin-left: 15rem;
+}
+
+@media (max-width:990px){
+    .searchBar{
+        margin-left : 0px;
+    }
+}
+
+.searchBar input {
+    color: white;
+    font-weight: 800;
+    border: 2px solid rgba(255, 255, 255, 0.374);
+}
+
+.searchButton {
+    width: 6rem;
+    border: 2px solid rgba(255, 255, 255, 0.374);
+    color: rgba(255, 255, 255, 0.374);
+
+}
+
+.registraction {
+    /* flex-wrap: wrap; */
+    padding-left: 5%;
+    display: flex;
+}
+
+.registraction .btn {
+    color: white;
+    font-weight: 600;
+}
+
+.registraction .login {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+
+/* //////////////////////////////////////////                  CONTENT PAGE */
+
+.content-page {
+    /* padding-top: 6rem; */
+    background-color: #000000;
+    display: flex;
+}
+
+.sidebar {
+    background-color: #161616;
+    width: 22rem;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content {
+    background-color: #161616;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.sideBarNav {
+    width: 100%;
+    height: 4.75rem;
+    /* background-color: #1F1F1F; */
+    border-radius: 15px;
+}
+
+.sideBarNav img {
+    height: 1.7rem;
+    width: 1.7rem;
+    opacity: 0.4;
+}
+
+.sideBarNav h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #646464;
+}
+
+.sideBarNav i {
+    font-size: 1.3rem;
+    color: #ffffff52;
+}
+
+
+.languageBtn:hover{
+    background-color: rgb(42, 168, 42);
+}
+
+@media (max-width:768px) {
+    .content-page {
+        /* padding-top: 11rem; */
+    }
+
+    .sidebar {
+        width: 12rem;
+    }
+
+    .sidebar h3 {
+        font-size: 0.9rem;
+    }
+
+    .container .sideBarCardButton {
+        width: 6rem;
+    }
+
+    .content-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+
+
+.card {
+    background-color: #1F1F1F;
+    /* height: 8.3rem; */
+}
+
+.card button {
+    width: 9rem;
+    border-radius: 21px;
+    background-color: #ffffffeb;
+    color: black;
+    border: none;
+}
+
+.card .card-text {
+    color: #ffffffc9;
+}
+
+.card .card-title {
+    font-weight: bold;
+    color: white;
+}
+
+.policies .col {
+    color: #ffffff59;
+    font-size: 0.8rem;
+    /* line-height: 1.rem; */
+    font-weight: bold;
+}
+
+.languageBtn {
+    border-radius: 25px;
+}
+
+.languageBtn span {
+    font-size: 0.9rem;
+}
+
+
+/* ///////////////////             Content Page       //////////////////// */
+
+
+.singerInfo img {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+}
+
+.singerInfo .singerName {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+}
+
+.role {
+    font-size: 1.2rem;
+}
+
+
+.albumInfo img {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 20px;
+}
+
+.albumInfo .albumName {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+}
+
+.roleAlbum {
+    font-size: 1.2rem;
+}
+
+.albumContainer {
+    display: flex;
+}
+
+.artistContainer {
+    display: flex;
+}
+
+@media (max-width:768px) {
+
+    .singerInfo .singerName {
+        font-size: 0.9rem;
+    }
+
+    .role {
+        font-size: 0.9rem;
+    }
+
+    .albumInfo .albumName {
+        font-size: 0.9rem;
+    }
+
+    .roleAlbum {
+        font-size: 0.9rem;
+    }
+
+    .singerInfo img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .albumInfo img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .albumContainer {
+        flex-wrap: wrap;
+    }
+
+    .artistContainer {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ////////////////////////////////////////////////////////////        Footer       */
+
+
+footer .card {
+    margin-top: 10rem;
+    background-color: transparent;
+    border: none;
+}
+
+footer .card-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+    line-height: 2rem;
+}
+
+footer .card-text a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.584);
+}
+
+.socialMedia {
+    padding-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    .socialMedia {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.socialMedia .btn-outline-light {
+    border: 2px solid rgb(186, 186, 186);
+    border-radius: 50%;
+}
+
+.socialMedia .btn-outline-light i {
+    color: #8a8a8a;
+}
+
+.socialMedia .btn-outline-light i:hover {
+    color: black;
+}
+
+
+
+hr {
+    color: white;
+}
+
+
+.theEnd {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+}
+
+.theEnd p {
+    color: #ffffff80;
+}

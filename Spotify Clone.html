@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="spotifyClone.css">
+    <title>Spotify Clone</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-4" href="#"><img src="/Spotify-Images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <i class="fa-solid fa-house  me-2"><b style="color: #ffffffba; font-weight: 700; font-size: 1.3rem;" class="ms-2 me-4"><a href="#" style="text-decoration: none; color: #ffffffba;">Home</a></b></i>
+                <form class="d-flex searchBar" role="search">
+                    <input class="form-control me-2 searchInput" type="search" placeholder="What you want to Listen?" aria-label="Search">
+                    <button class="btn btn-outline-light searchButton" type="submit">Search</button>
+                </form>
+
+                <div class="registraction mx-5 my-3">
+                    <div class="btn mx-3">Sign up</div>
+                    <div class="btn btn-outline-dark login">Log in</div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- /////////////////////////////////////////////               Content Page      -->
+
+    <div class="content-page">
+
+
+        <div class="sidebar ms-2">
+
+            <div class="sideBarNav d-flex   align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <img src="/Spotify-Images/library_icon.png" alt="" class="ms-4 me-1">
+                    <h3>Your Library</h3>
+                </div>
+                <div class="align-items-center">
+                    <i class="fa-solid fa-plus add-Icon ms-5 me-3"></i>
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div class="card mx-2 my-3">
+                    <div class="card-title ms-3 my-2">
+                        Create your first playlist
+                    </div>
+                    <div class="card-text ms-3 my-1">
+                        It's easy , we will help you
+                    </div>
+                    <button class="btn btn-success ms-3 my-2 sideBarCardButton"><b>Create Playlist</b></button>
+                </div>
+
+
+                <div class="card mx-2 my-3">
+                    <div class="card-title ms-3 my-2">
+                        Let's find some podcast to follow
+                    </div>
+                    <div class="card-text ms-3 my-1">
+                        We'll kepp you updated on new episodes
+                    </div>
+                    <button class="btn btn-success ms-3 my-2  sideBarCardButton"><b>Create Playlist</b></button>
+                </div>
+
+
+                <div class="row policies  mt-5">
+                    <div class="col mx-2 ms-4">Legal</div>
+                    <div class="col mx-2">Safety&Privacy Centre</div>
+                    <div class="col mx-2">Privacy Policy</div>
+                </div>
+
+                <div class="row policies my-3">
+                    <div class="col mx-2 ms-4">Cookies</div>
+                    <div class="col mx-2">About ads </div>
+                    <div class="col mx-2">Accessibility</div>
+                </div>
+
+                <button class="btn btn-outline-light mx-3 my-3 languageBtn"><i class="fa-solid fa-language"><span
+                            class="ms-3">English</span></i></button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="content ms-2 me-2">
+
+
+            <!-- ////////////////////////////////////////////////////////////////////          Artist Container  -->
+
+            <div class="popularArtists">
+                <div class="card">
+                    <div class="card-title">
+                        <h2><b>Popular artists</b></h2>
+                    </div>
+
+                    <div class="artistContainer d-flex">
+                        <div class="card-body singerInfo me-2">
+                            <img src="/Spotify-Images/Diljit Dosanjh.jpg" alt="">
+                            <div class="card-text">
+                                <p class="singerName">Diljit Dosanjh</p>
+                                <span class="role">artist</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body singerInfo me-2">
+                            <img src="/Spotify-Images/Eminem.jpg" alt="">
+                            <div class="card-text">
+                                <p class="singerName">Eminem</p>
+                                <span class="role">rapper</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body singerInfo me-2">
+                            <img src="/Spotify-Images/SidhuMoosewala.jpg" alt="">
+                            <div class="card-text">
+                                <p class="singerName">Sidhu</p>
+                                <span class="role">artist</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body singerInfo me-2">
+                            <img src="/Spotify-Images/Nimrat Kaira.jpg" alt="">
+                            <div class="card-text">
+                                <p class="singerName">Nimrat Kaira</p>
+                                <span class="role">artist</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body singerInfo me-2">
+                            <img src="/Spotify-Images/Arjit Singh.jpg" alt="">
+                            <div class="card-text">
+                                <p class="singerName">Arjit Singh</p>
+                                <span class="role">artist</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- ////////////////////////////////////////////////////////////////////          Popular Albums  -->
+
+
+
+            <div class="popularAlbums">
+                <div class="card">
+                    <div class="card-title">
+                        <h2><b>Popular albums</b></h2>
+                    </div>
+
+                    <div class="albumContainer d-flex">
+
+
+                        <div class="card-body albumInfo me-2">
+                            <img src="/Spotify-Images/JassarAlbum.webp" alt="">
+                            <div class="card-text">
+                                <p class="albumName">Kingpin</p>
+                                <span class="roleAlbum">Tarsem Jassar</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body albumInfo me-2">
+                            <img src="/Spotify-Images/Justin_Bieber_Album.png" alt="">
+                            <div class="card-text">
+                                <p class="albumName">Justice 2021</p>
+                                <span class="roleAlbum">Justin Bieber</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body albumInfo me-2">
+                            <img src="/Spotify-Images/Snoop Dogg Album.jpg" alt="">
+                            <div class="card-text">
+                                <p class="albumName">The Last Meal</p>
+                                <span class="roleAlbum">Snoop Dogg</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body albumInfo me-2">
+                            <img src="/Spotify-Images/KaranAujlaAlbum.jpg" alt="">
+                            <div class="card-text">
+                                <p class="albumName">Four Me</p>
+                                <span class="roleAlbum">Karan Aujla</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body albumInfo me-2">
+                            <img src="/Spotify-Images/Mid Nights Album.webp" alt="">
+                            <div class="card-text">
+                                <p class="albumName">The Mid Nights</p>
+                                <span class="roleAlbum">Whitney Houston</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ////////////////////////////////////////////////////////////////////          Featured Charts  -->
+
+
+            <div class="popularAlbums">
+                <div class="card">
+                    <div class="card-title">
+                        <h2><b>Popular Charts</b></h2>
+                    </div>
+
+                    <div class="albumContainer d-flex">
+
+
+                        <div class="card-body albumInfo me-2">
+                            <img src="/Spotify-Images/card1img.jpeg" alt="">
+                            <div class="card-text">
+                                <p class="albumName">Mindblowing</p>
+                                <span class="roleAlbum">Daily Updated </span>
+                            </div>
+                        </div>
+
+                        <div class="card-body albumInfo me-2">
+                            <img src="/Spotify-Images/card2img.jpeg" alt="">
+                            <div class="card-text">
+                                <p class="albumName">Romantic</p>
+                                <span class="roleAlbum">Be Moody</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body albumInfo me-2">
+                            <img src="/Spotify-Images/card3img.jpeg" alt="">
+                            <div class="card-text">
+                                <p class="albumName">Vintage Songs</p>
+                                <span class="roleAlbum">Old is Gold</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body albumInfo me-2">
+                            <img src="/Spotify-Images/card4img.jpeg" alt="">
+                            <div class="card-text">
+                                <p class="albumName">South india</p>
+                                <span class="roleAlbum">be addicted</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body albumInfo me-2">
+                            <img src="/Spotify-Images/card6img.jpeg" alt="">
+                            <div class="card-text">
+                                <p class="albumName">Have a Look</p>
+                                <span class="roleAlbum">Contrast of different spices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer class="d-flex align-items-center justify-content-between my-3 mx-2">
+                <div class="card mx-3 my-6">
+                    <div class="card-title">
+                        Company
+                    </div>
+                    <div class="card-text">
+                        <a href="#">About</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">For the record</a>
+                    </div>
+                </div>
+
+
+                <div class="card mx-3 my-6">
+                    <div class="card-title">
+                        Communities
+                    </div>
+                    <div class="card-text">
+                        <a href="#">For Artists</a>
+                        <a href="#">Developers</a>
+                        <a href="#">Advertising</a>
+                        <a href="#">Investors</a>
+                        <a href="#">Vendors</a>
+                    </div>
+                </div>
+
+
+                <div class="card mx-3 my-6">
+                    <div class="card-title">
+                        Useful Links
+                    </div>
+                    <div class="card-text">
+                        <a href="#">Support</a>
+                        <a href="#">Free Mobile App</a>
+                    </div>
+                </div>
+
+
+                <div class="card mx-3 my-6">
+                    <div class="card-title">
+                        Spotify Plans
+                    </div>
+                    <div class="card-text">
+                        <a href="#">Premium Individual</a>
+                        <a href="#">Premius Due</a>
+                        <a href="#">Premium Family</a>
+                        <a href="#">Premium Student</a>
+                        <a href="#">Spotify Free</a>
+                    </div>
+                </div>
+
+
+                <div class="socialMedia">
+                    <div class="btn btn-outline-light mx-2"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="btn btn-outline-light me-2"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="btn btn-outline-light"><i class="fa-brands fa-facebook"></i></div>
+                </div>
+            </footer>
+
+
+            <hr>
+
+
+            <div class="theEnd mx-2 my-3">
+                <p>&copy;2024 Spotify AB</p>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
